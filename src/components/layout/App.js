@@ -1,6 +1,11 @@
 import "../styles/App.scss"
+import Navigation from "./Navigation"
 function App() {
-  return <div className="App"></div>
+  return (
+    <div className="fullWrap">
+      <header>{<Navigation />}</header>
+    </div>
+  )
 }
 
 export default App
