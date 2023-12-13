@@ -1,9 +1,11 @@
 import "../styles/App.scss"
 import Navigation from "./Navigation"
+import Start from "./Start"
 function App() {
   return (
     <div className="fullWrap">
-      <header>{<Navigation />}</header>
+      <nav>{<Navigation />}</nav>
+      <header>{<Start />}</header>
     </div>
   )
 }

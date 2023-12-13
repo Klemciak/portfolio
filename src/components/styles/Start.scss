@@ -1,0 +1,87 @@
+@import "./variables.scss";
+.startWrap {
+  margin-top: 140px;
+  height: 800px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+
+  &_photo {
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 290px;
+    height: 420px;
+    text-align: center;
+    background: repeating-conic-gradient(
+      from var(--a),
+      #000000 0%,
+      #000000 5%,
+      transparent 5%,
+      transparent 40%,
+      #000000 50%
+    );
+    border: 1px solid $lightGray-color;
+    border-radius: 15px;
+    animation: animate 8s linear infinite;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background: repeating-conic-gradient(
+        from var(--a),
+        $lightGray-color 0%,
+        $lightGray-color 5%,
+        transparent 5%,
+        transparent 40%,
+        $lightGray-color 50%
+      );
+      animation: animate 8s linear infinite;
+      animation-delay: -2s;
+    }
+    &_img {
+      height: 400px;
+      margin: 5px;
+      opacity: 1;
+      border: 1px solid white;
+      border-radius: 15px;
+
+      filter: grayscale(30%);
+    }
+  }
+}
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+.startWrap_text {
+  margin-right: 50px;
+  .text_cloud {
+    background-image: url("../graphics/cloud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 800px;
+    height: 250px;
+    padding: 35px 0 0 50px;
+  }
+}
