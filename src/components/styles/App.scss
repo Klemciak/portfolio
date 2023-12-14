@@ -3,3 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+.fullWrap {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(https://background-tiles.com/overview/mixed-colors/patterns/large/1100.png) left top/auto repeat;
+  background-blend-mode: lighten;
+}

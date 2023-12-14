@@ -1,13 +1,16 @@
 @import "./variables.scss";
+.wrapForBgcTop {
+  padding-top: 100px;
+}
 .startWrap {
   position: relative;
-  margin: 100px 120px 0 120px;
+  margin: 0px 120px 100px 120px;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: $main-fontFamily;
-  border-bottom: 1px solid $lightGray-color;
+  background-color: rgba(255, 255, 255, 0.96);
   box-shadow: 0px 0px 6px 1px $lightGray-color;
   border-radius: 15px;
   &_title {
@@ -18,6 +21,7 @@
     padding: 0px 15px;
     margin-top: 10px;
     font-size: 25px;
+    text-transform: uppercase;
     border-radius: 15px;
     border: 3px solid black;
     box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
@@ -40,7 +44,7 @@
       #000000 50%
     );
     border-radius: 15px;
-    animation: animate 9s linear infinite;
+    animation: animate 27s linear infinite;
 
     &::before {
       content: "";
@@ -48,7 +52,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: -1;
+
       width: 100%;
       height: 100%;
       border-radius: 15px;
@@ -60,8 +64,8 @@
         transparent 40%,
         $lightGray-color 50%
       );
-      animation: animate 9s linear infinite;
-      animation-delay: -3s;
+      animation: animate 27s linear infinite;
+      animation-delay: -9s;
     }
     &::after {
       content: "";
@@ -69,7 +73,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: -1;
+
       width: 100%;
       height: 100%;
       border-radius: 15px;
@@ -81,14 +85,14 @@
         transparent 40%,
         rgb(103, 103, 103) 50%
       );
-      animation: animate 9s linear infinite;
-      animation-delay: -6s;
+      animation: animate 27s linear infinite;
+      animation-delay: -18s;
     }
     &_img {
       height: 400px;
       opacity: 1;
       border-radius: 15px;
-
+      z-index: 1;
       filter: grayscale(30%);
     }
   }
