@@ -1,20 +1,35 @@
 @import "./variables.scss";
 .startWrap {
-  margin-top: 140px;
-  height: 800px;
+  position: relative;
+  margin: 100px 120px 0 120px;
+  height: 700px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-
+  font-family: $main-fontFamily;
+  border-bottom: 1px solid $lightGray-color;
+  box-shadow: 0px 0px 6px 1px $lightGray-color;
+  border-radius: 15px;
+  &_title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 15px;
+    margin-top: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+  }
   &_photo {
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 290px;
-    height: 420px;
+    width: 284px;
+    height: 414px;
     text-align: center;
     background: repeating-conic-gradient(
       from var(--a),
@@ -24,9 +39,8 @@
       transparent 40%,
       #000000 50%
     );
-    border: 1px solid $lightGray-color;
     border-radius: 15px;
-    animation: animate 8s linear infinite;
+    animation: animate 9s linear infinite;
 
     &::before {
       content: "";
@@ -46,14 +60,33 @@
         transparent 40%,
         $lightGray-color 50%
       );
-      animation: animate 8s linear infinite;
-      animation-delay: -2s;
+      animation: animate 9s linear infinite;
+      animation-delay: -3s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background: repeating-conic-gradient(
+        from var(--a),
+        rgb(103, 103, 103) 0%,
+        rgb(103, 103, 103) 5%,
+        transparent 5%,
+        transparent 40%,
+        rgb(103, 103, 103) 50%
+      );
+      animation: animate 9s linear infinite;
+      animation-delay: -6s;
     }
     &_img {
       height: 400px;
-      margin: 5px;
       opacity: 1;
-      border: 1px solid white;
       border-radius: 15px;
 
       filter: grayscale(30%);
@@ -82,6 +115,46 @@
     background-position: center center;
     width: 800px;
     height: 250px;
-    padding: 35px 0 0 50px;
+    padding: 35px 160px 35px 50px;
+
+    &_title {
+      margin-top: 10px;
+      font-size: 27px;
+    }
+    &_text {
+      margin-top: 10px;
+      text-indent: 30px;
+      font-size: 18px;
+    }
+  }
+  .text_technology {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_html,
+    &_css,
+    &_sass,
+    &_js,
+    &_react {
+      font-size: 50px;
+    }
+    &_html {
+      color: #e5532d;
+    }
+    &_css {
+      color: #2d53e5;
+    }
+    &_sass {
+      color: #cf6c9c;
+    }
+    &_js {
+      color: #f1d438;
+    }
+    &_react {
+      color: #1082a7;
+    }
   }
 }
