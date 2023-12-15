@@ -1,5 +1,6 @@
 import React from "react"
 import "../styles/About.scss"
+import gifCat from "../graphics/cat.gif"
 const About = () => {
   return (
     <div className="aboutWrap">
@@ -54,6 +55,7 @@ const About = () => {
               wymagania branżowe.
             </li>
           </ul>
+          <img className="goals_gifCat" src={gifCat} alt="kot machający ogonem" />
         </div>
       </div>
       <span className="aboutWrap_shortDescriptionBottom">

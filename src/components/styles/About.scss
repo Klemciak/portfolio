@@ -19,8 +19,15 @@
     border: 3px solid black;
     box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
   }
-  &_shortDescriptionTop {
+  &_shortDescriptionTop,
+  &_shortDescriptionBottom {
     padding: 10px 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
   }
 }
 .aboutWrap_characteristicsAndGoals {
@@ -34,10 +41,16 @@
     width: 48%;
     text-align: justify;
     padding: 20px 50px;
-    line-height: 28px;
+    line-height: 24px;
+    height: 500px;
+    border-radius: 70px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+    margin: 35px 0;
     &_list {
       list-style: square inside;
       &_title {
+        letter-spacing: 2px;
         text-align: center;
         font-size: 25px;
         border-bottom: 1px solid black;
@@ -45,10 +58,20 @@
       }
       &_element {
         margin-bottom: 15px;
+        font-size: 16px;
       }
     }
     & strong {
-      font-size: 20px;
+      font-size: 19px;
     }
+  }
+}
+.goals {
+  position: relative;
+  &_gifCat {
+    position: absolute;
+    bottom: -39.5%;
+    right: -10%;
+    transform: scale(0.5);
   }
 }
