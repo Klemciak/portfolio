@@ -3,6 +3,7 @@ import Navigation from "./Navigation"
 import Start from "./Start"
 import About from "./About"
 import Projects from "./Projects"
+import Contact from "./Contact"
 function App() {
   return (
     <div className="fullWrap">
@@ -12,6 +13,7 @@ function App() {
         <div>{<About />}</div>
         <div>{<Projects />}</div>
       </body>
+      <footer>{<Contact />}</footer>
     </div>
   )
 }
