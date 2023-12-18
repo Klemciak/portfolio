@@ -87,3 +87,94 @@
     background: #00000000 url(../graphics/autotuningSite.png) center bottom/cover no-repeat;
   }
 }
+@media (max-width: 1500px) {
+  .projectWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &_img {
+      width: 34.5%;
+      height: 500px;
+    }
+  }
+}
+@media (max-width: 1275px) {
+  .projectsWrap {
+    margin: 0px 10px 100px 10px;
+  }
+  .projectWrap {
+    width: 100%;
+
+    &_img {
+      width: 34.5%;
+      height: 500px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .projectWrap {
+    &_description {
+      text-align: center;
+      &_title {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      &_text {
+        margin-bottom: 30px;
+        font-size: 17px;
+      }
+      &_links {
+        flex-direction: column;
+        & a {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &_img {
+      width: 38%;
+      height: 550px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .projectsWrap {
+    margin: 0px 5px 100px 5px;
+    padding: 20px 10px 40px 10px;
+  }
+  .projectWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &_description {
+      width: 100%;
+      &_title {
+        margin-top: 40px;
+      }
+      &_links {
+        & a {
+          font-size: 22px;
+
+          padding: 5px 20px;
+        }
+      }
+    }
+    &_img {
+      width: 83%;
+      height: 550px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .projectWrap {
+    &_img {
+      width: 83%;
+      height: 350px;
+      &:hover {
+        transform: scale(1.2) translateY(1%);
+      }
+    }
+  }
+}

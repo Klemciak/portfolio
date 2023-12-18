@@ -13,7 +13,6 @@ const Start = () => {
           <div className="text_cloud">
             <h2 className="text_cloud_title">Hej, mam na imię Karol ! 👋</h2>
             <p className="text_cloud_text">
-              {" "}
               W ostatnim czasie poszerzam moją wiedzę z front-endu. Teraz już znam podstawy i pracuję nad rozwinięciem
               umiejętności projektowania responsywnych i atrakcyjnych interfejsów! 🌐💻
             </p>

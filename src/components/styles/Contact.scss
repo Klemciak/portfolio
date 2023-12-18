@@ -36,3 +36,16 @@
     margin-bottom: 20px;
   }
 }
+@media (max-width: 600px) {
+  .contactWrap {
+    &_options {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      &_town {
+        margin-right: 0px;
+      }
+    }
+  }
+}
