@@ -38,7 +38,7 @@
   .characteristics,
   .goals {
     display: block;
-    width: 48%;
+    width: 44%;
     text-align: justify;
     padding: 20px 50px;
     line-height: 24px;
@@ -64,6 +64,9 @@
     & strong {
       font-size: 19px;
     }
+  }
+  .goals {
+    width: 54%;
   }
 }
 .goals {

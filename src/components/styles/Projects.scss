@@ -1,0 +1,89 @@
+@import "./variables.scss";
+.projectsWrap {
+  margin: 0px 120px 100px 120px;
+  padding: 20px 50px 40px 50px;
+  font-family: $main-fontFamily;
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0px 0px 6px 1px $lightGray-color;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &_title {
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+  }
+}
+
+.projectWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &_img {
+    width: 30%;
+    height: 600px;
+    animation: imgAutoScroll linear 30s infinite;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2) translateY(-4%);
+    }
+  }
+  &_description {
+    width: 50%;
+
+    &_title {
+      text-transform: uppercase;
+      font-size: 30px;
+      margin-bottom: 30px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    }
+    &_text {
+      margin-bottom: 80px;
+      display: block;
+      font-size: 22px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.493);
+    }
+    &_links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      & a {
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        border: 2px solid black;
+        padding: 5px 25px;
+        border-radius: 15px;
+        transition: 0.5s;
+        box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+}
+
+@keyframes imgAutoScroll {
+  0%,
+  5%,
+  95%,
+  100% {
+    background: #00000000 url(../graphics/autotuningSite.png) center top/cover no-repeat;
+  }
+  45%,
+  55% {
+    background: #00000000 url(../graphics/autotuningSite.png) center bottom/cover no-repeat;
+  }
+}
