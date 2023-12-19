@@ -1,30 +1,61 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "../styles/Navigation.scss"
 const Navigation = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [topValueAbout, setTopValueAbout] = useState(825)
+  const [topValueProject, setTopValueProject] = useState(1700)
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
   const scrollToStart = () => {
     window.scrollTo({
-      top: 0,
+      top: 20,
       behavior: "smooth",
     })
   }
   const scrollToAbout = () => {
     window.scrollTo({
-      top: 800,
+      top: topValueAbout,
       behavior: "smooth",
     })
   }
   const scrollToProject = () => {
     window.scrollTo({
-      top: 1700,
+      top: topValueProject,
       behavior: "smooth",
     })
   }
   const scrollToContact = () => {
     window.scrollTo({
-      top: 3000,
+      top: 5000,
       behavior: "smooth",
     })
   }
+  useEffect(() => {
+    if (windowWidth <= 320) {
+      setTopValueProject(3500)
+    } else if (windowWidth <= 400) {
+      setTopValueProject(3420)
+    } else if (windowWidth <= 750) {
+      setTopValueProject(3360)
+    } else if (windowWidth <= 750) {
+      setTopValueProject(2800)
+    } else if (windowWidth <= 1000) {
+      setTopValueProject(2580)
+    } else if (windowWidth <= 1050) {
+      setTopValueAbout(1020)
+      setTopValueProject(2380)
+    } else {
+      setTopValueAbout(825)
+      setTopValueProject(1700)
+    }
+  }, [windowWidth])
   return (
     <div className="navWrap">
       <div className="navWrap_nick">
