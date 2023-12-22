@@ -33,26 +33,28 @@ const Navigation = () => {
   }
   const scrollToContact = () => {
     window.scrollTo({
-      top: 5000,
+      top: 10000,
       behavior: "smooth",
     })
   }
   useEffect(() => {
     if (windowWidth <= 320) {
       setTopValueProject(3500)
+      setTopValueAbout(1020)
     } else if (windowWidth <= 400) {
       setTopValueProject(3420)
+      setTopValueAbout(1020)
     } else if (windowWidth <= 750) {
       setTopValueProject(3360)
-    } else if (windowWidth <= 750) {
-      setTopValueProject(2800)
+      setTopValueAbout(1050)
     } else if (windowWidth <= 1000) {
       setTopValueProject(2580)
+      setTopValueAbout(1050)
     } else if (windowWidth <= 1050) {
-      setTopValueAbout(1020)
+      setTopValueAbout(1050)
       setTopValueProject(2380)
     } else {
-      setTopValueAbout(825)
+      setTopValueAbout(850)
       setTopValueProject(1700)
     }
   }, [windowWidth])
