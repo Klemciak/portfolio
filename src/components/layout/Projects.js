@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faSistrix } from "@fortawesome/free-brands-svg-icons"
 const Projects = () => {
   return (
-    <div className="projectsWrap">
+    <div className="projectsWrap" id="project">
       <h2 className="projectsWrap_title">Projekt</h2>
       <div className="projectWrap">
         <div className="projectWrap_img"></div>
@@ -19,7 +19,7 @@ const Projects = () => {
             <a href="https://github.com/Klemciak/autotuning">
               kod <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://klemciak.github.io/autotuning/">
+            <a href="https://auto-tuning-test.netlify.app">
               demonstracja <FontAwesomeIcon icon={faSistrix} />
             </a>
           </div>

@@ -15,6 +15,7 @@
   border-radius: 15px;
   &_title {
     position: absolute;
+    text-align: center;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -22,9 +23,9 @@
     margin-top: 10px;
     font-size: 25px;
     text-transform: uppercase;
-    border-radius: 15px;
-    border: 3px solid black;
-    box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
+    border-radius: 12px;
+    border-bottom: 3px solid black;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.56);
   }
   &_photo {
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);

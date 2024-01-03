@@ -9,10 +9,10 @@ function App() {
     <div className="fullWrap">
       <nav>{<Navigation />}</nav>
       <header>{<Start />}</header>
-      <body>
+      <div className="body">
         <div>{<About />}</div>
         <div>{<Projects />}</div>
-      </body>
+      </div>
       <footer>{<Contact />}</footer>
     </div>
   )

@@ -3,7 +3,7 @@ import "../styles/About.scss"
 import gifCat from "../graphics/cat.gif"
 const About = () => {
   return (
-    <div className="aboutWrap">
+    <div className="aboutWrap" id="about">
       <h2 className="aboutWrap_title">O mnie</h2>
       <span className="aboutWrap_shortDescriptionTop">
         Jestem osobą otwartą na nowe wyzwania, która zdecydowanie chce się rozwijać w dziedzinie front-endu. Moje cechy,

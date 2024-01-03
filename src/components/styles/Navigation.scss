@@ -61,7 +61,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 10px 28px 10px 0;
-    & div {
+    & .nav_start,
+    .nav_about,
+    .nav_project,
+    .nav_contact {
       margin-right: 50px;
       padding: 5px 10px;
       cursor: pointer;
@@ -100,7 +103,10 @@
       margin-left: 20px;
     }
     .navWrap_nav {
-      & div {
+      & .nav_start,
+      .nav_about,
+      .nav_project,
+      .nav_contact {
         margin-right: 10px;
       }
     }
@@ -112,7 +118,10 @@
     .navWrap_nav {
       margin: 2px 0px 10px 0;
 
-      & div {
+      & .nav_start,
+      .nav_about,
+      .nav_project,
+      .nav_contact {
         margin-right: 0px;
       }
     }
@@ -128,7 +137,10 @@
       flex-wrap: wrap;
       justify-content: center;
       width: 102%;
-      & div {
+      & .nav_start,
+      .nav_about,
+      .nav_project,
+      .nav_contact {
         width: 49%;
         margin: 1px;
         &:nth-child(1) {

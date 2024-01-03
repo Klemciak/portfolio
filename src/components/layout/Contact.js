@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/Contact.scss"
 const Contact = () => {
   return (
-    <div className="contactWrap">
+    <div className="contactWrap" id="contact">
       <h2 className="contactWrap_title">Kontakt</h2>
       <div className="contactWrap_options">
         <div className="contactWrap_options_town">Miejscowość: Tymbark, Polska 📍</div>
